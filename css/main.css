@@ -99,7 +99,7 @@ ul {
 	height: 40px;
 	line-height: 40px;
 	padding: 0 20px;
-	background-color: #3deaa4;
+	background-color: #ffc107;
 	color: #000;
 	position: relative;
 	z-index: 1;
@@ -176,7 +176,7 @@ ul {
 	display: inline-block;
 	font-size: 23px;
 	margin-bottom: 70px;
-	color: #3deaa4;
+	color: #ffc107;
 	line-height: 1;
 	position: relative;
 }
@@ -773,7 +773,7 @@ body.noscroll header.fixed {
 
 .skill-item .skill-percent {
 	height: 100%;
-	background: #3deaa4;
+	background: #ffc107;
 }
 
 /* start education wrapper */
