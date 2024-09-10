@@ -31,11 +31,12 @@
 
 
 /* General Styles */
+/* General Styles */
 .social-links {
     text-align: center;
     margin: 40px auto; /* Increased margin for better spacing */
     padding: 20px;
-    background-color: #f8f9fa; /* Light background color for better contrast */
+    background-color: #323641; /* Background color */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
 }
@@ -43,7 +44,7 @@
 .social-links h5 {
     font-size: 1.8em; /* Slightly larger font size */
     margin-bottom: 20px;
-    color: #333; /* Dark color for the heading */
+    color: #ccc; /* Color for the heading */
 }
 
 .links-container {
@@ -57,12 +58,12 @@
     display: flex;
     align-items: center;
     font-size: 1.1em; /* Increased font size for better readability */
-    color: #555; /* Slightly lighter color for the text */
+    color: #ccc; /* Color for the icons */
     text-decoration: none;
     padding: 10px 15px; /* Padding for better click area */
     border-radius: 8px; /* Rounded corners for the icons */
     transition: all 0.3s ease; /* Smooth transition for all changes */
-    background-color: #ffffff; /* White background for each icon */
+    background-color: #1a1a1a; /* Background color for each icon */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow effect */
 }
 
@@ -72,7 +73,7 @@
 }
 
 .social-icon:hover {
-    color: #0073e6; /* Change to your preferred hover color */
+    color: #0073e6; /* Hover color for the icons */
     transform: scale(1.1); /* Slightly scale up on hover */
     background-color: #eaf4ff; /* Light background color on hover */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
@@ -100,6 +101,7 @@
         padding: 6px 10px; /* Adjust padding for small screens */
     }
 }
+
 
 
 

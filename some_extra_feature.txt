@@ -1,0 +1,43 @@
+  <section class="profile-section" id="vinay-kumar-mahato">
+                        <div class="profile-card">
+                          <!-- Profile Image -->
+                          <div class="profile-image-container">
+                            <img src="img/Vinay Kumar Profile.gif" alt="Vinay Kumar Mahato" class="profile-image">
+                            <p class="profile-title">CEO & Founder @ ADV Indian Coder & Inoglite IT Services & Consulting</p>
+                          </div>
+                      
+                          <!-- Profile Info -->
+                          <div class="profile-info">
+                            <h1>Hey, <span class="highlight">Vinay</span></h1>
+                            <p>Explore further and discover:</p>
+                      
+                            <!-- Vision Box -->
+                            <div class="vision-box">
+                              <button class="read-more">READ MORE</button>
+                              <h2>DIVE DEEPER <br><span class="bold-text">INTO MY VISION</span></h2>
+                              <p>September 5th <span class="bold-text">My Birthday</span></p>
+                              <p>
+                                I aim to empower individuals through technology and innovation. 
+                                My mission is to lead and inspire by delivering impactful solutions 
+                                and mentoring future tech leaders.
+                              </p>
+                              <p>Through my ventures, including ADV Indian Coder & Inoglite IT Services 
+                                and Consulting, I strive to foster growth, drive advancements, and shape 
+                                a future where technology solves real-world problems.
+                              </p>
+                            </div>
+                      
+                            <!-- Social Links -->
+                            <div class="social-links">
+                              <a href="#" class="linkedin">
+                                <img src="img/linkedin.png" alt="LinkedIn Icon">
+                                <span>Vinay Kumar</span>
+                              </a>
+                              <a href="#" class="github">
+                                <img src="img/github.png" alt="GitHub Icon">
+                                <span>Vinay Kumar</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
