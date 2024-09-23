@@ -27,81 +27,89 @@
     google fonts
 ========================================================================== */
 
-/* Fullscreen Image Wrapper */
-.fullscreen-image {
-	position: relative;
-	width: 100%;
-	height: 100vh; /* Full viewport height */
-	overflow: hidden;
-	z-index: -1; /* Ensure the image stays behind the content */
-	display: flex; /* Flexbox to center the image */
-	justify-content: center; /* Horizontally center the image */
-	align-items: center; /* Vertically center the image */
-	margin-top: 80px; /* Adjust as per your layout */
-}
 
-/* Fullscreen Image Style */
-.fullscreen-image img {
-	width: 100%;
-	height: auto; /* Maintain aspect ratio */
-	max-height: 100vh; /* Ensures the image fits within the viewport without cropping */
-	object-fit: contain; /* Ensures the image is fully visible and not cropped */
-	object-position: center center; /* Centers the image within the container */
-}
+
+
+
+
+
 
 /* Home Wrapper Styling */
 .home-wrapper {
 	position: relative;
 	z-index: 1; /* Keeps content above the image */
-	padding: 50px 0;
+	padding: 50px 20px; /* Added horizontal padding for smaller screens */
 	display: flex;
+	flex-direction: column; /* Stack content vertically */
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh; /* Ensures home content takes up full height */
+	text-align: center; /* Center align text for better aesthetics */
+	background: rgba(0, 0, 0, 0.6); /* Dark background for contrast */
+	border-radius: 20px; /* Rounded corners for a softer look */
+	backdrop-filter: blur(10px); /* Blurred background effect */
 }
 
-/* Responsive Text and Content Adjustments for Different Screen Sizes */
+/* Hero Content Styling */
 .hero-content {
 	color: #fff; /* Text color */
-	text-align: center;
 }
 
+.hero-content h2 {
+	margin: 0; /* Remove default margin */
+	font-family: 'Arial', sans-serif; /* Custom font for header */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for readability */
+}
+
+/* Hero Image Styling */
 .hero-img img {
 	width: 100%;
 	max-width: 400px;
 	border-radius: 50%;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Deep shadow for depth */
+	transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+/* Hover Effect for Images */
+.hero-img img:hover {
+	transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+/* Responsive Text and Content Adjustments for Different Screen Sizes */
+.hero-content p {
+	line-height: 1.5; /* Improved readability */
 }
 
 /* Media Query for Larger Screens */
 @media (min-width: 1200px) {
 	.hero-content h2 {
-		font-size: 2rem;
+		font-size: 3rem; /* Increased font size for emphasis */
 	}
 
 	.hero-content p {
-		font-size: 1.4rem;
+		font-size: 1.6rem; /* Larger paragraph text */
 	}
 }
 
 /* Media Query for Medium Screens */
 @media (max-width: 1024px) {
 	.hero-content h2 {
-		font-size: 1.8rem;
+		font-size: 2.5rem; /* Adjusted font size */
 	}
 
 	.hero-content p {
-		font-size: 1.2rem;
+		font-size: 1.4rem; /* Larger paragraph text */
 	}
 }
 
 /* Media Query for Small Screens and Mobile Devices */
 @media (max-width: 768px) {
 	.hero-content h2 {
-		font-size: 1.5rem;
+		font-size: 2rem; /* Adjusted font size */
 	}
 
 	.hero-content p {
-		font-size: 1rem;
+		font-size: 1.2rem; /* Larger paragraph text */
 	}
 
 	.hero-img img {
@@ -112,11 +120,11 @@
 /* Media Query for Very Small Screens (Mobile) */
 @media (max-width: 480px) {
 	.hero-content h2 {
-		font-size: 1.2rem;
+		font-size: 1.5rem; /* Adjusted font size */
 	}
 
 	.hero-content p {
-		font-size: 0.9rem;
+		font-size: 1rem;
 	}
 
 	.hero-img img {
