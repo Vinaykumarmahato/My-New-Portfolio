@@ -1362,3 +1362,156 @@ textarea.input_field {
 }
 
 /* end main-wrapper */
+
+
+
+
+
+/* Social Links Section Styling */
+.social-links {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links h5 {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    color: #f8f8f9;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+
+
+
+/* Links Container Styling */
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Social Icon Styling */
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 18px;
+    font-size: 1.4rem;
+    color: #000; /* Default icon/text color */
+    background-color: #3deaa4;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+
+.social-icon i {
+    margin-right: 8px;
+    font-size: 1.6rem;
+    transition: transform 0.3s ease;
+}
+
+/* Hover and Focus Effects */
+.social-icon:hover {
+    background-color: #ffffff; /* Turns white on hover */
+    color: #0000ff; /* Icon/text color turns blue */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon:focus {
+    outline: none;
+    background-color: #ffffff; /* Turns white when focused */
+    color: #0000ff; /* Icon/text color turns blue */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon:hover i, 
+.social-icon:focus i {
+    transform: rotate(360deg); /* Rotate icon on hover */
+    color: #0000ff; /* Icon color turns blue */
+}
+
+/* Icon-Specific Colors */
+.social-icon.youtube { background-color: #FF0000; }
+.social-icon.linkedin { background-color: #0077B5; }
+.social-icon.github { background-color: #333; }
+.social-icon.upwork { background-color: #6FDA44; }
+.social-icon.leetcode { background-color: #FFA116; }
+.social-icon.twitter { background-color: #1DA1F2; }
+.social-icon.facebook { background-color: #4267B2; }
+.social-icon.instagram { background-color: #E1306C; }
+.social-icon.newsletter, .social-icon.content-writing { background-color: #555; }
+.social-icon.resume-website { background-color: #2D2D2D; }
+
+/* Ensure icon color changes to white on hover */
+.social-icon:hover.youtube, 
+.social-icon:hover.linkedin, 
+.social-icon:hover.github, 
+.social-icon:hover.upwork, 
+.social-icon:hover.leetcode, 
+.social-icon:hover.twitter, 
+.social-icon:hover.facebook, 
+.social-icon:hover.instagram, 
+.social-icon:hover.newsletter, 
+.social-icon:hover.content-writing, 
+.social-icon:hover.resume-website {
+    background-color: #ffffff; /* White background on hover */
+    color: #0000ff; /* Change text/icon color to blue */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .social-icon {
+        font-size: 1.2rem;
+        padding: 10px 16px;
+    }
+
+    .social-icon i {
+        font-size: 1.4rem;
+    }
+
+    .links-container {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .social-icon {
+        font-size: 1.1rem;
+        padding: 8px 14px;
+    }
+
+    .social-icon i {
+        font-size: 1.2rem;
+    }
+
+    .social-links h5 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icon {
+        font-size: 1rem;
+        padding: 6px 12px;
+    }
+
+    .social-icon i {
+        font-size: 1rem;
+    }
+
+    .social-links h5 {
+        font-size: 1.4rem;
+    }
+}
