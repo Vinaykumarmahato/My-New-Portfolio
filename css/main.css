@@ -28,173 +28,167 @@
 ========================================================================== */
 
 
-
-
-
-
-
-
-/* Home Wrapper Styling */
+/* Start Home Wrapper */
 .home-wrapper {
-	position: relative;
-	z-index: 1; /* Keeps content above the image */
-	padding: 50px 20px; /* Added horizontal padding for smaller screens */
-	display: flex;
-	flex-direction: column; /* Stack content vertically */
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh; /* Ensures home content takes up full height */
-	text-align: center; /* Center align text for better aesthetics */
-	background: rgba(0, 0, 0, 0.6); /* Dark background for contrast */
-	border-radius: 20px; /* Rounded corners for a softer look */
-	backdrop-filter: blur(10px); /* Blurred background effect */
+    padding: 100px 0;
+    margin-top: 100px;
+    border-top: 1px solid #22252d;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensures home content takes up full height */
 }
 
-/* Hero Content Styling */
 .hero-content {
-	color: #fff; /* Text color */
+    padding-left: 30px;
+    color: #fff; /* Text color */
+    text-align: center;
 }
 
-.hero-content h2 {
-	margin: 0; /* Remove default margin */
-	font-family: 'Arial', sans-serif; /* Custom font for header */
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for readability */
+.home-wrapper .hero-img {
+    position: relative;
+    padding: 0 15px;
 }
+
+.home-wrapper .hero-img::before,
+.home-wrapper .hero-img::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background-color: #3deaa4;
+    z-index: -2;
+}
+
+.home-wrapper .hero-img::after {
+    right: 0;
+    top: -15px;
+}
+
+.home-wrapper .hero-img::before {
+    bottom: -15px;
+    left: 0;
+}
+
+.home-wrapper .hero-img .shape::before {
+    content: "\e687";
+    font-size: 48vw;
+    color: #111318;
+    font-family: 'themify';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* Hero Content Text Styling */
+.hero-content .intro-name {
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    padding-left: 2px;
+}
+
+.hero-content p {
+    line-height: 1.5; /* Improved readability */
+}
+
+.hero-content p span {
+    display: block;
+    font-size: 18px;
+    position: relative;
+    padding-left: 45px;
+}
+
+.hero-content p span::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 30px;
+    left: 0;
+    top: 15px;
+    background: #3deaa4;
+}
+
+
+
+
+
+
 
 /* Hero Image Styling */
 .hero-img img {
-	width: 100%;
-	max-width: 400px;
-	border-radius: 50%;
-	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Deep shadow for depth */
-	transition: transform 0.3s ease; /* Smooth scaling effect */
+    width: 100%;
+    max-width: 400px;
+    /* border-radius: 50%; */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Deep shadow for depth */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+	margin-left: 15px;
 }
 
 /* Hover Effect for Images */
 .hero-img img:hover {
-	transform: scale(1.05); /* Slightly enlarge image on hover */
+    transform: scale(1.05); /* Slightly enlarge image on hover */
 }
 
-/* Responsive Text and Content Adjustments for Different Screen Sizes */
-.hero-content p {
-	line-height: 1.5; /* Improved readability */
-}
+/* Responsive Adjustments for Different Screen Sizes */
 
 /* Media Query for Larger Screens */
 @media (min-width: 1200px) {
-	.hero-content h2 {
-		font-size: 3rem; /* Increased font size for emphasis */
-	}
+    .hero-content h2 {
+        font-size: 3rem; /* Increased font size for emphasis */
+    }
 
-	.hero-content p {
-		font-size: 1.6rem; /* Larger paragraph text */
-	}
+    .hero-content p {
+        font-size: 1.6rem; /* Larger paragraph text */
+    }
 }
 
 /* Media Query for Medium Screens */
 @media (max-width: 1024px) {
-	.hero-content h2 {
-		font-size: 2.5rem; /* Adjusted font size */
-	}
+    .hero-content h2 {
+        font-size: 2.5rem; /* Adjusted font size */
+    }
 
-	.hero-content p {
-		font-size: 1.4rem; /* Larger paragraph text */
-	}
+    .hero-content p {
+        font-size: 1.4rem;
+    }
 }
 
 /* Media Query for Small Screens and Mobile Devices */
 @media (max-width: 768px) {
-	.hero-content h2 {
-		font-size: 2rem; /* Adjusted font size */
-	}
+    .hero-content h2 {
+        font-size: 2rem;
+    }
 
-	.hero-content p {
-		font-size: 1.2rem; /* Larger paragraph text */
-	}
+    .hero-content p {
+        font-size: 1.2rem;
+    }
 
-	.hero-img img {
-		max-width: 300px;
-	}
+    .hero-img img {
+        max-width: 300px;
+    }
 }
 
 /* Media Query for Very Small Screens (Mobile) */
 @media (max-width: 480px) {
-	.hero-content h2 {
-		font-size: 1.5rem; /* Adjusted font size */
-	}
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
 
-	.hero-content p {
-		font-size: 1rem;
-	}
+    .hero-content p {
+        font-size: 1rem;
+    }
 
-	.hero-img img {
-		max-width: 200px;
-	}
+    .hero-img img {
+        max-width: 200px;
+    }
 }
-
-
- /* Home Wrapper Styling */
- .home-wrapper {
-	position: relative;
-	z-index: 1; /* Ensures content stays on top of the fullscreen image */
-	padding: 50px 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh; /* Ensures home content takes up full height */
- }
- 
- /* Hero Content Styling */
- .hero-content {
-	color: #fff; /* Text color */
-	text-align: center;
- }
- 
- .hero-img img {
-	width: 100%;
-	max-width: 400px;
-	border-radius: 50%;
- }
- 
- /* Media Query for Smaller Screens */
- @media (max-width: 1024px) {
-	.hero-content h2 {
-	   font-size: 1.8rem;
-	}
- 
-	.hero-content p {
-	   font-size: 1.2rem;
-	}
- }
- 
- @media (max-width: 768px) {
-	.hero-content h2 {
-	   font-size: 1.5rem;
-	}
- 
-	.hero-content p {
-	   font-size: 1rem;
-	}
- 
-	.hero-img img {
-	   max-width: 300px;
-	}
- }
- 
- @media (max-width: 480px) {
-	.hero-content h2 {
-	   font-size: 1.2rem;
-	}
- 
-	.hero-content p {
-	   font-size: 0.9rem;
-	}
- 
-	.hero-img img {
-	   max-width: 200px;
-	}
- }
- 
 
 
 
@@ -711,6 +705,7 @@ body.noscroll header.fixed {
 	margin-left: 3px;
 }
 
+
 /* start home wrapper */
 
 .home-wrapper {
@@ -773,6 +768,9 @@ body.noscroll header.fixed {
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 }
+
+
+
 
 .hero-content .intro-name {
 	font-size: 60px;
